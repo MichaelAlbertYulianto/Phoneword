@@ -1,25 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Phoneword.MainPage">
+             x:Class="Core.MainPage">
 
-    <!--<ScrollView>
+    <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
             Spacing="25">
-
-            <HorizontalStackLayout>
-                <Label Text="username : " VerticalTextAlignment="Center" />
-                <Entry x:Name="usernameInput" Placeholder="Enter username" VerticalTextAlignment="Center"/>
-            </HorizontalStackLayout>
-
-            <HorizontalStackLayout>
-                <Button x:Name="btnHello"
-                        Clicked="btnHello_Clicked" 
-                        Text="Hello" Margin="5" />
-                <Button x:Name="btnSubmit" Clicked="btnSubmit_Clicked" Text="Submit" Margin="5" />
-            </HorizontalStackLayout>
-            
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
@@ -44,20 +31,6 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
-    </ScrollView>-->
-
-    <VerticalStackLayout Spacing="15" Padding="20">
-        <Label Text="Enter a PhoneWord" 
-               FontSize="20"/>
-        <Entry x:Name="PhoneNumberText"
-               Text="1-555-NETMAUI"/>
-        <Button x:Name= "TranslateButton"
-                Text = "Translate"
-                Clicked="OnTranslate"/>
-        <Button x:Name="CallButton"
-                Text="Call"
-                IsEnabled="False"
-                Clicked="OnCall"/>
-    </VerticalStackLayout>
+    </ScrollView>
 
 </ContentPage>
